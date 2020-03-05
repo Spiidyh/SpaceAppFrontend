@@ -61,13 +61,13 @@ class Signup extends Component {
         signup(signupRequest)
         .then(response => {
             notification.success({
-                message: 'Polling App',
+                message: 'Space App',
                 description: "Thank you! You're successfully registered. Please Login to continue!",
             });          
             this.props.history.push("/login");
         }).catch(error => {
             notification.error({
-                message: 'Polling App',
+                message: 'Space App',
                 description: error.message || 'Sorry! Something went wrong. Please try again!'
             });
         });
@@ -140,7 +140,7 @@ class Signup extends Component {
                                 value={this.state.password.value} 
                                 onChange={(event) => this.handleInputChange(event, this.validatePassword)} />    
                         </FormItem>
-                        <FormItem>
+                        <FormItem className="footer">
                             <Button type="primary" 
                                 htmlType="submit" 
                                 size="large" 
