@@ -1,4 +1,4 @@
-export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8080/api';
+export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://ec2-35-178-252-44.eu-west-2.compute.amazonaws.com/api';
 export const ACCESS_TOKEN = 'accessToken';
 
 
