@@ -39,7 +39,6 @@ export default function Note(props) {
     }
 
 
-console.log(props.currentUser.username)
     return (
         <div>
             <ContentEditable html={text} onChange={e => setText(e.target.value)} style={{color: 'white'}}/>

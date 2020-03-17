@@ -38,6 +38,11 @@ class AppHeader extends Component {
                         <label>APOD</label>
                     </Link>
                 </Menu.Item>,
+                <Menu.Item key="/asteroids">
+                    <Link to="/asteroids" className="custom-navlink">
+                        <label>Asteroids</label>
+                    </Link>
+                </Menu.Item>,
                 <Menu.Item key="/profile" className="profile-menu">
                     <ProfileDropdownMenu
                         currentUser={this.props.currentUser}
@@ -61,7 +66,8 @@ class AppHeader extends Component {
             <Header className="app-header">
                 <div className="container">
                     <div className="app-title" style={{color: 'white'}}>
-                        <Link to="/" style={{color: 'white', visited: "white", hover: "#61dafb", active: "white"}}>Samppas Super Awesome Space App</Link>
+                        <Link to="/" style={{color: 'white', visited: "white", hover: "#61dafb", active: "white"}}>Samppas
+                            Super Awesome Space App</Link>
                     </div>
                     {noteDock}
                     <Menu
@@ -90,9 +96,9 @@ function ProfileDropdownMenu(props) {
             </Menu.Item>
             <Menu.Divider/>
             <Menu.Item key="profile" className="dropdown-item" style={{color: "white"}} theme="dark">
-                <Link to={`/users/${props.currentUser.username}` } style={{color: "white"}}>Profile</Link>
+                <Link to={`/users/${props.currentUser.username}`} style={{color: "white"}}>Profile</Link>
             </Menu.Item>
-            <Menu.Item key="logout" className="dropdown-item"   style={{color: 'white'}}>
+            <Menu.Item key="logout" className="dropdown-item" style={{color: 'white'}}>
                 Logout
             </Menu.Item>
         </Menu>

@@ -1,7 +1,7 @@
 {
   "name": "space-app-client",
   "version": "0.1.0",
-  "proxy": "http://ec2-35-178-252-44.eu-west-2.compute.amazonaws.com/",
+  "proxy": "http://ec2-35-179-38-230.eu-west-2.compute.amazonaws.com/",
   "private": true,
   "dependencies": {
     "@ant-design/dark-theme": "^2.0.1",
