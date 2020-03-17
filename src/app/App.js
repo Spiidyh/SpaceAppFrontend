@@ -17,6 +17,7 @@ import NotFound from '../common/NotFound';
 import LoadingIndicator from '../common/LoadingIndicator';
 import PrivateRoute from '../common/PrivateRoute';
 import {Helmet} from 'react-helmet';
+import AsteroidPage from "../asteroids/AsteroidPage";
 import Apod from'../apod/Apod'
 import {Layout, notification} from 'antd';
 
@@ -109,6 +110,8 @@ class App extends Component {
                                    render={(props) => <Profile isAuthenticated={this.state.isAuthenticated}
                                                                currentUser={this.state.currentUser} {...props}  />}/>
                             <PrivateRoute authenticated={this.state.isAuthenticated} path="/apod" exact component={Apod}
+                                          handleLogout={this.handleLogout}/>
+                            <PrivateRoute authenticated={this.state.isAuthenticated} path="/asteroids" exact component={AsteroidPage}
                                           handleLogout={this.handleLogout}/>
                             <PrivateRoute authenticated={this.state.isAuthenticated} path="/" exact component={Welcome}
                                           handleLogout={this.handleLogout}/>

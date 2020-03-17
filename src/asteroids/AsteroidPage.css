@@ -1,0 +1,10 @@
+table .custom-table {
+    border: 2px #61dafb!important;
+    width: 100%;
+
+}
+th, td {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}

@@ -2,15 +2,15 @@ import React from 'react';
 
 function Welcome() {
 
-        return (
+    return (
 
-            <div className="welcome">
+        <div className="welcome">
+            <h1>Welcome</h1>
+            <p>Welcome to the super awesome Space App which contains lots of awesome and usefull stuff!</p>
 
-                         <h1>Welcome</h1>
-
-            </div>
-        )
-    }
+        </div>
+    )
+}
 
 
 export default Welcome;
